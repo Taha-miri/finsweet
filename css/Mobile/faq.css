@@ -1,0 +1,51 @@
+.faq {
+    width: 100%;
+    height: 85vw;
+    padding-top: 5vw;
+    box-sizing: border-box;
+    flex-flow: column nowrap;
+    display: flex;
+    .faq-left {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      h2 {
+        width: 49%;
+        font-size: 2.3vw;
+        color: var(--black);
+        font-family: bold;
+        height: 20%;
+      }
+      h3 {
+        width: 60%;
+        height: 8%;
+        color: rgba(36, 5, 242, 1);
+        font-size: 2vw;
+        font-family: Poppins;
+        cursor: pointer;
+        padding:  0.8vw;
+        padding-top: 2vw;
+        box-sizing: border-box;
+      }
+    }
+    .faq-right {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      width: 100%;
+      height: 80%;
+      .faq-right-item{
+          width: 80%;
+          height: 80%;
+      }
+    }
+  }
+  
+  .number{
+    color: rgba(36, 5, 242, 1);
+    font-family: bold;
+    font-size: 2.5vw;
+    display: inline-block;
+  }

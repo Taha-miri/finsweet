@@ -1,0 +1,175 @@
+.start-pricing {
+  width: 100%;
+  height: 60vw;
+  box-sizing: border-box;
+  padding: 3vw 5vw 2vw 5vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  .pricing-title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: bold;
+    font-size: 2.5vw;
+    color: var(--black);
+  }
+  .pricing-lorem {
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-family: Poppins;
+    color: var(--black);
+  }
+  .pricing-item {
+    width: 100%;
+    display: flex;
+    transition: 500ms;
+    gap: 2vw;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 77%;
+    .pricing-card {
+      cursor: pointer;
+      padding: 2vw 0vw;
+      box-sizing: border-box;
+      height: 90%;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5vw;
+      flex-flow: column nowrap;
+      background-color: rgba(244, 246, 252, 1);
+      width: calc(100% / 3 - 8%);
+      &:hover {
+        background-color: rgba(28, 30, 83, 1);
+        .price {
+          .number-price {
+            color: var(--lightcolor);
+          }
+          .number-pricing {
+            color: rgba(252, 217, 128, 1);
+          }
+        }
+        .pricing-card-item > ul > li {
+          color: var(--lightcolor);
+        }
+        .pricing-btn {
+          color: var(--black);
+          background-color: rgba(252, 217, 128, 1);
+        }
+        .pricing-lorem > h2 {
+          color: var(--lightcolor);
+        }
+        .pricing-lorem > h3 {
+          color: var(--lightcolor);
+        }
+      }
+
+      .price {
+        display: flex;
+        justify-content: start;
+        transition: 500ms;
+        align-items: center;
+        width: 80%;
+        height: 15%;
+        .number-price {
+          width: 37%;
+          transition: 500ms;
+          height: 100%;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          font-size: 2vw;
+          font-family: bold;
+          color: var(--black);
+        }
+        transition: 500ms;
+        .number-pricing {
+          width: 40%;
+          height: 100%;
+          transition: 500ms;
+          font-size: 0.8vw;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          font-family: bold;
+          color: rgba(36, 5, 242, 1);
+        }
+      }
+      .pricing-lorem {
+        width: 80%;
+        transition: 500ms;
+        height: 15%;
+        display: flex;
+        flex-flow: column nowrap;
+        h2 {
+          height: 50%;
+          width: 100%;
+          transition: 500ms;
+          color: var(--black);
+          font-size: 1vw;
+          font-family: Poppins;
+        }
+        h3 {
+          height: 50%;
+          width: 100%;
+          opacity: 0.7;
+          color: var(--black);
+          transition: 500ms;
+          font-size: 0.9vw;
+          font-weight: normal;
+          font-family: bold;
+        }
+      }
+      .pricing-card-item {
+        width: 80%;
+        height: 60%;
+        padding: 2vw 0vw;
+        box-sizing: border-box;
+        ul {
+          width: 100%;
+          height: 100%;
+          list-style: none;
+          li {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            margin-top: 0.5vw;
+            height: calc(100% / 5);
+            color: var(--black);
+            transition: 500ms;
+            font-size: 0.8vw;
+            font-family: bold;
+          }
+        }
+      }
+      .pricing-btn {
+        width: 55%;
+        border-radius: 25px;
+        height: 10%;
+        background-color: var(--black);
+        transition: 500ms;
+        color: var(--lightcolor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;
+        font-family: Poppins;
+        cursor: pointer;
+        &:hover{
+            transform: scale(85%);
+        }
+      }
+    }
+  }
+}

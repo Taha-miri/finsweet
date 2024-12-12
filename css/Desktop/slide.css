@@ -1,0 +1,123 @@
+.slide {
+  background-color: rgba(244, 246, 252, 0.35);
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  height: 20vw;
+  padding: 3vw;
+  box-sizing: border-box;
+  .slide-right {
+    height: 100%;
+    width: 50%;
+  }
+  .slide-left {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    h1 {
+      width: 50%;
+      font-family: Poppins;
+      color: var(--black);
+      font-size: 2vw;
+    }
+    h2 {
+      width: 50%;
+      margin-top: 1vw;
+      font-size: 1vw;
+      color: var(--whitecolor);
+      font-family: Poppins;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex;
+  width: 0.7vw;
+  height: 0.7vw;
+  padding: 1.5vw;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: var(--black);
+  transition: 400ms;
+  background-color: var(--whitecolor);
+  &:hover {
+    background-color: var(--basecolor);
+    color: var(--lightcolor);
+  }
+}
+
+.slides-itemss {
+  width: 100%;
+  height: 60%;
+  text-align: start;
+  font-size: 1.2vw;
+  font-family: bold;
+}
+
+.slides-imgsss {
+  display: flex !important;
+  width: 100%;
+  height: 30%;
+}
+
+.slide-title {
+  width: 100%;
+  height: 100%;
+  .slides-imgsss-profile {
+    width: 9%;
+    height: 100%;
+    background-color: #fff;
+  }
+}
+
+.slides-imgsss-h {
+  text-align: start;
+  padding-left: 1vw;
+  box-sizing: border-box;
+  height: 100%;
+  width: 40%;
+  h3 {
+    font-size: 1vw;
+    font-family: Poppins;
+  }
+  h5 {
+    font-size: 1vw;
+    font-family: Poppins;
+  }
+}
+
+.slides-imgsss-profile {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+  }
+}

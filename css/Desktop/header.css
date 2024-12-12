@@ -1,0 +1,29 @@
+header {
+  height: 5.8vw;
+}
+
+.contact {
+  all: unset;
+  font-family: Poppins;
+  padding: 1vw 2.3vw;
+  border-radius: 15vw;
+  border: 0.15vw solid var(--bordercolor);
+  color: var(--lightcolor);
+  font-size: 1vw;
+}
+
+.logo {
+  margin-right: 20%;
+  svg {
+    width: 15vw;
+    height: 3vw;
+  }
+}
+
+.navbar ul li a {
+    transition: 600ms;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 1.2vw;
+    color: var(--whitecolor);
+  }

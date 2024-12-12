@@ -1,0 +1,42 @@
+.faq {
+  width: 100%;
+  height: 40vw;
+  padding-top: 5vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  .faq-left {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    h2 {
+      width: 49%;
+      font-size: 2vw;
+      color: var(--black);
+      font-family: bold;
+      height: 20%;
+    }
+    h3 {
+      width: 60%;
+      height: 8%;
+      color: rgba(36, 5, 242, 1);
+      font-size: 0.9vw;
+      font-family: Poppins;
+      padding: 0.8vw;
+      box-sizing: border-box;
+    }
+  }
+  .faq-right {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+    .faq-right-item{
+        width: 80%;
+        height: 80%;
+    }
+  }
+}

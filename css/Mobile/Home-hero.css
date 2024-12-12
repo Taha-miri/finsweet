@@ -1,0 +1,76 @@
+.home-hero {
+  width: 100%;
+  height: 60vw;
+  background-color: var(--basecolor);
+  display: flex;
+  .hero-right {
+    display: none;
+  }
+  .hero-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .hero-title {
+      color: var(--lightcolor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 85%;
+      height: 80%;
+      gap: 2vw;
+      font-size: 4.4vw;
+      font-family: bold;
+      .hero-title-title {
+        width: 100%;
+        height: 30%;
+      }
+      .hero-title-more {
+        width: 100%;
+        height: 15%;
+        font-size: 2.5vw;
+        color: var(--whitecolor);
+      }
+      .hero-title-buttun {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        gap: 5px;
+        .hero-title-buttun-btn {
+          text-align: center;
+          width: 30%;
+          height: 50%;
+          font-size: 2vw;
+          line-height: 25px;
+          transition: 400ms;
+          cursor: pointer;
+          border-radius: 40px;
+          &:hover {
+            background-color: rgba(252, 217, 128, 1);
+            color: var(--black);
+            transform: scale(85%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-btn {
+  background-color: rgba(252, 217, 128, 1);
+  color: var(--black);
+}
+
+.hero-title-buttun-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    display: inline-block;
+  }
+}

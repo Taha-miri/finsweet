@@ -1,0 +1,103 @@
+.how-we-work {
+  width: 100%;
+  height: 40vw;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1.5vw;
+}
+
+.div5 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  .how-we-title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 3vw;
+    font-family: bold;
+    font-weight: 800;
+    color: var(--black);
+  }
+  .how-we-more{
+    width: 100%;
+    height: 35%;
+    padding: 1vw 0vw;
+    box-sizing: border-box;
+    font-size: 1vw;
+    color: var(--blackcolor);
+    font-family: Poppins;
+  }
+  .how-we-get{
+    width: 100%;
+    height: 25%;
+    padding: 1vw 0vw;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: rgba(36, 5, 242, 1);
+    font-size: 1.1vw;
+    font-family: Poppins;
+  }
+}
+
+
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 8;
+    grid-row-start: 3;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 6;
+    grid-row-start: 6;
+
+}
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 8;
+    grid-row-start: 6;
+}
+
+.how-we-item-title{
+    width: 100%;
+    height: 30%;
+    font-family: bold;
+    font-size: 2vw;
+}
+
+.how-we-item-img{
+    width: 100%;
+    height: 35%;
+}
+
+.how-we-item-more{
+    height: 35%;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 1vw;
+    padding: 0.2vw;
+    box-sizing: border-box;
+    color: var(--blackcolor);
+}
